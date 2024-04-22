@@ -1,0 +1,153 @@
+:root {
+	--green: #2f6c1c;
+	--yellow: #ffb800;
+	--dark: #1a2257;
+	--nav-bar-height: 8vh;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+}
+
+.bold {
+	font-family: 'Poppins';
+	font-weight: bold;
+}
+
+.navbar {
+	background-color: white;
+	height: var(--nav-bar-height);
+	display: flex;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem 2rem;
+	z-index: 2;
+}
+
+.navbar-links {
+	text-decoration: none;
+	font-family: 'Poppins';
+	padding: 0 0.5rem;
+	color: var(--dark);
+	position: relative;
+}
+
+.navbar-links:after {
+	content: "";
+	position: absolute;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	width: 0;
+	height: 2px;
+	background-color: var(--green);
+	transition: width 0.5s;
+}
+
+.navbar-links:hover:after {
+	width: 100%;
+}
+
+.navbar-button {
+	background-color: white;
+	border: 0.5px solid;
+	border-radius: 1px;
+	padding: 1rem 2rem;
+	font-size: 1rem;
+	color: var(--green);
+	transition: 0.3s;
+	font-family: 'Poppins';
+}
+
+.navbar-button:hover {
+	background-color: var(--green);
+	color: white;
+}
+
+.background-image {
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	z-index: -1;
+	background-image: url("assets/double_hexagon.svg");
+	background-size: 200%;
+	background-repeat: no-repeat;
+	background-position-x: -80vw;
+	background-position-y: -170vw;
+}
+
+@media screen and (max-width: 1200px) {
+  .background-image {
+	  background-position-x: -40vw;
+	  background-position-y: -120vw;
+  }
+}
+
+.content {
+	display: flex;
+	justify-content: center;
+	padding: calc(var(--nav-bar-height) + 2rem) 2rem;
+	overflow: hidden;
+}
+
+@media screen and (max-width: 1200px) {
+  .content {
+	  flex-direction: column;
+	  align-items: center;
+  }
+}
+
+.left-content {
+	display: flex;
+	width: 40%;
+	flex-direction: column;
+}
+
+.left-text {
+	color: white;
+	font-family: 'Poppins';
+	padding-bottom: 1rem;
+}
+
+.highlighted {
+	color: var(--yellow);
+}
+
+.contact-us {
+	display: inline-flex;
+	background-color: var(--yellow);
+	border-radius: 2rem;
+	padding: 1rem 4rem 1rem 4rem;
+	justify-content: center;
+	align-items: center;
+}
+
+.contact-us a {
+	color: var(--dark);
+	font-family: 'Poppins';
+	width: 100%;
+	text-align: center;
+	text-decoration: none;
+	transition: 0.3s;
+}
+
+.contact-us a:hover {
+	color: white;
+}
+
+.image {
+	position: relative;
+	right: -10vw;
+	width: 90%;
+}
+
+@media screen and (max-width: 1200px) {
+  .image {
+	  display: none;
+  }
+}

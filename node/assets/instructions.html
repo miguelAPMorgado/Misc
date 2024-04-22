@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link href="prism.css" rel="stylesheet" />
+  <style> 
+    body {
+      background: white;
+      font-family: monospace;
+    }
+
+    .flex-center {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .color-box {
+      height: 20px;
+      width: 20px;
+    }
+
+    .theme-colors {
+      
+      list-style-type: none;
+      margin-block-start: 15px;
+      margin-block-end: 20px;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      padding-inline-start: 0;
+
+      > li {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+    }
+
+    .code {
+      font-size: 14px;
+      max-width: 700px;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <script src="prism.js"></script>
+<pre>
+
+--- The rules ---
+
+1) No previews - of either results or assets!
+2) Stay in this editor at all times
+3) No measurement tools
+4) Stop coding when the time's up
+5) Use the "Download file" button and save the file as design.html in the same folder as the editor.
+
+Good luck and most important of all; have fun!
+
+--- Assets ---
+
+assets/computer.png
+assets/double_hexagon.svg
+assets/logo.svg
+
+</pre>
+
+-- Theme --
+
+
+<ul class="theme-colors">
+  <li>
+    <div class="color-box" style="background: #2f6c1c">
+    </div>
+    <div class="flex-center">#2f6c1c</div>
+  </li>
+  <li>
+    <div class="color-box" style="background: #ffb800">
+    </div>
+    <div class="flex-center">#ffb800</div>
+  </li>
+  <li>
+    <div class="color-box" style="background: #1a2257">
+    </div>
+    <div class="flex-center">#1a2257</div>
+  </li>
+</ul>
+
+<pre class="code">
+  <code class="language-css">
+    :root {
+      --green: #2f6c1c;
+      --yellow: #ffb800;
+      --dark: #1a2257
+    }
+    </code>
+</pre>
+
+-- Fonts --
+<pre>
+  <code class="language-css">
+    &lt;link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'&gt;
+  </code>
+</pre>
+
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link href="prism.css" rel="stylesheet" />
+  <style> 
+    body {
+      background: white;
+      font-family: monospace;
+    }
+
+    .flex-center {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .color-box {
+      height: 20px;
+      width: 20px;
+    }
+
+    .theme-colors {
+      
+      list-style-type: none;
+      margin-block-start: 15px;
+      margin-block-end: 20px;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      padding-inline-start: 0;
+
+      > li {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+    }
+
+    .code {
+      font-size: 14px;
+      max-width: 700px;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <script src="prism.js"></script>
+<pre>
+
+--- The rules ---
+
+1) No previews - of either results or assets!
+2) Stay in this editor at all times
+3) No measurement tools
+4) Stop coding when the time's up
+5) Use the "Download file" button and save the file as design.html in the same folder as the editor.
+
+Good luck and most important of all; have fun!
+
+--- Assets ---
+
+assets/logo.svg
+assets/modalities.jpg
+assets/stadium.jpg
+assets/bag.svg
+assets/user.svg
+
+
+</pre>
+
+-- Theme --
+
+
+<ul class="theme-colors">
+  <li>
+    <div class="color-box" style="background: #c30000">
+    </div>
+    <div class="flex-center">#c30000</div>
+  </li>
+  <li>
+    <div class="color-box" style="background: #242424">
+    </div>
+    <div class="flex-center">#242424</div>
+  </li>
+  <li>
+    <div class="color-box" style="background: #F4F4F4">
+    </div>
+    <div class="flex-center">#F4F4F4</div>
+  </li>
+</ul>
+
+<pre class="code">
+  <code class="language-css">
+    :root {
+      --red: #c30000;
+      --dark: #242424;
+      --lightgrey: #F4F4F4
+    }
+    </code>
+</pre>
+
+-- Fonts --
+<pre>
+  <code class="language-css">
+    &lt;link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'&gt;
+  </code>
+</pre>
+
+
+
+
+</body>
+</html>
